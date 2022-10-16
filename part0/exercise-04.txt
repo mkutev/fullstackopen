@@ -1,4 +1,4 @@
-title Untitled
+title FullStackOpen 2022 Exercise 0.4 
 
 Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 Server-->Browser: HTML-code
