@@ -1,0 +1,18 @@
+title FullStackOpen 2022 Exercise 0.6
+
+note over browser: User enters text into text input and clicks 'Submit' button.
+
+note over browser:
+note array is updated to include submitted text
+text box is cleared
+notes list is redrawn
+end note 
+
+note over browser: Browser sends user input to server.
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: HTTP 201 Created Server Response
+
+note over browser: server response is logged to console.
+
+
