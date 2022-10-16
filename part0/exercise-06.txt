@@ -14,5 +14,3 @@ browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_sp
 server-->browser: HTTP 201 Created Server Response
 
 note over browser: server response is logged to console.
-
-
