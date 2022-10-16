@@ -1,0 +1,27 @@
+title Untitled
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML-code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: data.json
+
+note left of Browser: User enters text into text input and clicks 'Submit' button.
+note left of Browser: Browser sends user input to server.
+Browser -> Server: HTTP POST: new_note [note=loremipsum]
+note right of Server: Server updates data.json to include user submitted input.
+note right of Server: Server asks the browser to do a new HTTP GET request
+Server --> Browser: Status Code 302, URL Redirect
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML-code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: data.json
+note left of Browser: Browser now receives the upadted data.json file.
+
